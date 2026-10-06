@@ -1,0 +1,86 @@
+{
+  "apiVersion": "1",
+  "domain": "minimax-h3",
+  "entry": "minimax-h3-video-prompt",
+  "packages": [
+    {
+      "id": "minimax-h3-video-prompt",
+      "version": "2.1.0",
+      "domain": "minimax-h3",
+      "entry": true,
+      "capabilities": [
+        "h3.compile",
+        "h3.validate"
+      ],
+      "dependencies": [
+        {
+          "id": "ai-manhua-director-thinking",
+          "version": "^3.9.1"
+        },
+        {
+          "id": "ai-manhua-emotion-clip",
+          "version": "^1.0.1"
+        },
+        {
+          "id": "ai-manhua-storyboard-qa",
+          "version": "^1.8.0"
+        },
+        {
+          "id": "ai-manhua-screenplay-comprehensive",
+          "version": "^2.6.0"
+        }
+      ],
+      "sourceSha256": "633175696c68d8b1129f7cf6738403163c112c7567406cec81d2f4ed4ac1a78e",
+      "path": "minimax-h3/minimax-h3-video-prompt/2.1.0"
+    },
+    {
+      "id": "ai-manhua-storyboard-qa",
+      "version": "1.8.0",
+      "domain": "minimax-h3",
+      "entry": false,
+      "capabilities": [
+        "transition.guard"
+      ],
+      "dependencies": [],
+      "sourceSha256": "c4cfb2dd2aa3d0e5e7cc725652b3322f0680ff3df63087e4d0131f139120a46e",
+      "path": "minimax-h3/deps/ai-manhua-storyboard-qa/1.8.0"
+    },
+    {
+      "id": "ai-manhua-director-thinking",
+      "version": "3.9.1",
+      "domain": "minimax-h3",
+      "entry": false,
+      "capabilities": [
+        "director.intent",
+        "staging.anchor"
+      ],
+      "dependencies": [],
+      "sourceSha256": "fb9c9d888dfa8b368e7b552a85d750d43c7f639dd34e768d2611574a775ef893",
+      "path": "minimax-h3/deps/ai-manhua-director-thinking/3.9.1"
+    },
+    {
+      "id": "ai-manhua-screenplay-comprehensive",
+      "version": "2.6.0",
+      "domain": "minimax-h3",
+      "entry": false,
+      "capabilities": [
+        "skeleton.fields"
+      ],
+      "dependencies": [],
+      "sourceSha256": "46b755041fb533d72ce62b764fdbe65c54cc03d5194f569b881d00f65ba07f47",
+      "path": "minimax-h3/deps/ai-manhua-screenplay-comprehensive/2.6.0"
+    },
+    {
+      "id": "ai-manhua-emotion-clip",
+      "version": "1.0.1",
+      "domain": "minimax-h3",
+      "entry": false,
+      "capabilities": [
+        "emotion.design"
+      ],
+      "dependencies": [],
+      "sourceSha256": "59c7e00453f1d5beec7bf3ffb3bc7ac3c719f4334e995ca8075a6c431b912759",
+      "path": "minimax-h3/deps/ai-manhua-emotion-clip/1.0.1"
+    }
+  ]
+}

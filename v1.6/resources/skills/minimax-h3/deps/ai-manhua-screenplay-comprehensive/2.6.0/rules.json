@@ -1,0 +1,87 @@
+{
+  "skillId": "ai-manhua-screenplay-comprehensive",
+  "version": "2.6.0",
+  "apiVersion": "1",
+  "sourceSha256": "46b755041fb533d72ce62b764fdbe65c54cc03d5194f569b881d00f65ba07f47",
+  "sections": [
+    {
+      "capability": "skeleton.fields",
+      "fields": [
+        {
+          "key": "character",
+          "label": "人物参考图的描述"
+        },
+        {
+          "key": "scene",
+          "label": "场景参考图的描述"
+        },
+        {
+          "key": "scale",
+          "label": "景别"
+        },
+        {
+          "key": "composition",
+          "label": "构图"
+        },
+        {
+          "key": "lens",
+          "label": "焦距"
+        },
+        {
+          "key": "movement",
+          "label": "运镜"
+        },
+        {
+          "key": "light",
+          "label": "光源"
+        },
+        {
+          "key": "atmosphere",
+          "label": "氛围"
+        },
+        {
+          "key": "blocking",
+          "label": "人物站位 + 朝向"
+        },
+        {
+          "key": "action",
+          "label": "肢体动作（方位/动线）"
+        },
+        {
+          "key": "performance",
+          "label": "微表情"
+        },
+        {
+          "key": "dialogue",
+          "label": "台词 / 内心OS"
+        },
+        {
+          "key": "sound",
+          "label": "音效"
+        },
+        {
+          "key": "transition",
+          "label": "衔接"
+        }
+      ],
+      "generatedKeys": [
+        "scale",
+        "composition",
+        "lens",
+        "movement",
+        "light",
+        "atmosphere",
+        "blocking",
+        "action",
+        "performance",
+        "sound",
+        "transition"
+      ],
+      "protectedKeys": [
+        "character",
+        "scene",
+        "dialogue"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ai-manhua-storyboard-qa",
+  "version": "1.8.0",
+  "apiVersion": "1",
+  "domain": "minimax-h3",
+  "entry": false,
+  "dependencies": [],
+  "sourceSha256": "c4cfb2dd2aa3d0e5e7cc725652b3322f0680ff3df63087e4d0131f139120a46e",
+  "sourcePath": "C:/Users/win10/.workbuddy/skills/ai-manhua-storyboard-qa/SKILL.md",
+  "sourceHeading": "分镜脚本机器化自检与交付（Storyboard QA Gate）",
+  "capabilities": [
+    "transition.guard"
+  ],
+  "consumers": {
+    "local": [
+      "rules.json"
+    ],
+    "ai": [
+      "prompt.md"
+    ]
+  }
+}
