@@ -1,0 +1,201 @@
+{
+  "skillId": "minimax-h3-video-prompt",
+  "version": "2.1.0",
+  "apiVersion": "1",
+  "sourceSha256": "633175696c68d8b1129f7cf6738403163c112c7567406cec81d2f4ed4ac1a78e",
+  "sections": [
+    {
+      "capability": "h3.compile",
+      "allowedKeys": [
+        "scale",
+        "composition",
+        "lens",
+        "movement",
+        "light",
+        "atmosphere",
+        "blocking",
+        "action",
+        "performance",
+        "sound",
+        "transition"
+      ]
+    },
+    {
+      "capability": "h3.validate",
+      "issuePolicy": {
+        "EMPTY": {
+          "severity": "error",
+          "category": "input"
+        },
+        "DURATION": {
+          "severity": "error",
+          "category": "input"
+        },
+        "SEGMENT_NUMBER": {
+          "severity": "error",
+          "category": "input"
+        },
+        "SHOT_NUMBER": {
+          "severity": "error",
+          "category": "input"
+        },
+        "SHOT_DURATION": {
+          "severity": "error",
+          "category": "input"
+        },
+        "SHOT_DURATION_MAX": {
+          "severity": "error",
+          "category": "input"
+        },
+        "FIELD_REQUIRED": {
+          "severity": "error",
+          "category": "input"
+        },
+        "PURPOSE_REQUIRED": {
+          "severity": "error",
+          "category": "input"
+        },
+        "CHARACTER_ANCHOR": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "TRANSITION": {
+          "severity": "error",
+          "category": "input"
+        },
+        "DIALOGUE_LIMIT": {
+          "severity": "error",
+          "category": "input"
+        },
+        "IMAGE_LIMIT": {
+          "severity": "error",
+          "category": "input"
+        },
+        "SCENE_REFERENCE": {
+          "severity": "error",
+          "category": "input"
+        },
+        "SHOT_SOURCE": {
+          "severity": "error",
+          "category": "input"
+        },
+        "VISUAL_UNCONFIRMED": {
+          "severity": "warning",
+          "category": "reference"
+        },
+        "IMAGE_UNDESCRIBED": {
+          "severity": "warning",
+          "category": "reference"
+        },
+        "SOURCE_VERSION": {
+          "severity": "error",
+          "category": "source"
+        },
+        "SOURCE_STRUCTURE": {
+          "severity": "error",
+          "category": "source"
+        },
+        "DIALOGUE_PROTECTION": {
+          "severity": "error",
+          "category": "source"
+        },
+        "BEAT_COVERAGE": {
+          "severity": "error",
+          "category": "source"
+        },
+        "CHARACTER_ANCHOR_DRIFT": {
+          "severity": "error",
+          "category": "source"
+        },
+        "IMAGE_PLACEHOLDER": {
+          "severity": "error",
+          "category": "safety"
+        },
+        "TRANSITION_FORBIDDEN": {
+          "severity": "error",
+          "category": "safety"
+        },
+        "DIRECTOR_UNCONFIRMED": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "DIALOGUE_LOAD": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "SHOT_DENSITY": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "ACTION_REVIEW": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "CONTINUITY_REVIEW": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "CHARACTER_CONTINUITY": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "BLOCKING_CONTINUITY": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "COMPOSITION_CONTINUITY": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "LIGHT_CONTINUITY": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "AUTO_MATCH_LOW_CONFIDENCE": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "EPISODE_SPLIT_UNVERIFIED": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "AXIS_JUMP": {
+          "severity": "error",
+          "category": "source"
+        },
+        "TRANSITION_PREMISE": {
+          "severity": "error",
+          "category": "source"
+        },
+        "SPEAKER_UNTRUSTED": {
+          "severity": "error",
+          "category": "source"
+        },
+        "BLOCKING_UNKNOWN_SUBJECT": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "SCALE_SUBJECT_CONFLICT": {
+          "severity": "warning",
+          "category": "review"
+        },
+        "STAGING_COMPOSITION_CONFLICT": {
+          "severity": "warning",
+          "category": "review"
+        }
+      },
+      "categoryNames": {
+        "input": "输入不完整",
+        "reference": "原图描述缺失",
+        "source": "剧本结构/台词不一致",
+        "safety": "内容安全",
+        "review": "建议复核"
+      },
+      "ignorableCategories": [
+        "input",
+        "reference"
+      ],
+      "severityRule": "error 仅限 input/reference/source 三类事实问题与 safety 内容安全；其余一律 warning"
+    }
+  ]
+}

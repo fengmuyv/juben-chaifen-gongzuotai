@@ -1,0 +1,22 @@
+{
+  "id": "ai-manhua-screenplay-comprehensive",
+  "version": "2.6.0",
+  "apiVersion": "1",
+  "domain": "minimax-h3",
+  "entry": false,
+  "dependencies": [],
+  "sourceSha256": "46b755041fb533d72ce62b764fdbe65c54cc03d5194f569b881d00f65ba07f47",
+  "sourcePath": "C:/Users/win10/.workbuddy/skills/ai-manhua-screenplay-comprehensive/SKILL.md",
+  "sourceHeading": "漫剧一体化编剧 & 表演标注综合 Skill（V2.2 升级版）",
+  "capabilities": [
+    "skeleton.fields"
+  ],
+  "consumers": {
+    "local": [
+      "rules.json"
+    ],
+    "ai": [
+      "prompt.md"
+    ]
+  }
+}

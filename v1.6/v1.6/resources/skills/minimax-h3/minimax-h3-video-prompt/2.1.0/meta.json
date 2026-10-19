@@ -1,0 +1,40 @@
+{
+  "id": "minimax-h3-video-prompt",
+  "version": "2.1.0",
+  "apiVersion": "1",
+  "domain": "minimax-h3",
+  "entry": true,
+  "dependencies": [
+    {
+      "id": "ai-manhua-director-thinking",
+      "version": "^3.9.1"
+    },
+    {
+      "id": "ai-manhua-emotion-clip",
+      "version": "^1.0.1"
+    },
+    {
+      "id": "ai-manhua-storyboard-qa",
+      "version": "^1.8.0"
+    },
+    {
+      "id": "ai-manhua-screenplay-comprehensive",
+      "version": "^2.6.0"
+    }
+  ],
+  "sourceSha256": "633175696c68d8b1129f7cf6738403163c112c7567406cec81d2f4ed4ac1a78e",
+  "sourcePath": "C:/Users/win10/.workbuddy/skills/minimax-h3-video-prompt/SKILL.md",
+  "sourceHeading": "MiniMax H3 提示词体系（v2.1.0 · 三段式 × API字段式 × Ref2VA × 文戏/武戏）",
+  "capabilities": [
+    "h3.compile",
+    "h3.validate"
+  ],
+  "consumers": {
+    "local": [
+      "rules.json"
+    ],
+    "ai": [
+      "prompt.md"
+    ]
+  }
+}
