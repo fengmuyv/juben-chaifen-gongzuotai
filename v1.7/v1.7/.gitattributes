@@ -1,0 +1,14 @@
+# Skill 包的完整性锚定在原字节上
+#
+# `resources/skills/**/SKILL.md` 与同目录 `meta.json` 的 `sourceSha256` 是**逐字节**对应的：
+# 加载器（`electron/skills/manager.ts`）装载前会重算 SKILL.md 的 SHA-256 并与 manifest 比对，
+# 不一致即拒绝装载、回落内置默认包。
+#
+# 因此这些文件**绝不能**被换行转换（`core.autocrlf=true` 的 clone / 各编辑器写回都会触发）：
+# 一次 CRLF↔LF 转换就会让全部包哈希失配，症状是「包明明在盘上，却静默走回内置判据」，
+# 而日志里只留下一句校验失败。`-text` 明确声明「不归一化」，把这条路堵死。
+#
+# ⚠️ 上游正本本身换行风格不统一（`ai-manhua-storyboard-qa` 与
+# `ai-manhua-screenplay-comprehensive` 是 CRLF，其余是 LF），所以即便按 LF 规范化也换不来一致性 ——
+# 只能原样锁定。改这里之前先读 `electron/skills/manager.ts` 的文件头说明。
+resources/skills/** -text

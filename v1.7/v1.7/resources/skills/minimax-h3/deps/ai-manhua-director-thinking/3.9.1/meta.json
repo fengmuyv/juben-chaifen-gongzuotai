@@ -1,0 +1,23 @@
+{
+  "id": "ai-manhua-director-thinking",
+  "version": "3.9.1",
+  "apiVersion": "1",
+  "domain": "minimax-h3",
+  "entry": false,
+  "dependencies": [],
+  "sourceSha256": "fb9c9d888dfa8b368e7b552a85d750d43c7f639dd34e768d2611574a775ef893",
+  "sourcePath": "C:/Users/win10/.workbuddy/skills/ai-manhua-director-thinking/SKILL.md",
+  "sourceHeading": "AI漫剧 · 导演思维 · 视听语言拉片方法学（L3·导演意图锚 · v3.0.0）",
+  "capabilities": [
+    "director.intent",
+    "staging.anchor"
+  ],
+  "consumers": {
+    "local": [
+      "rules.json"
+    ],
+    "ai": [
+      "prompt.md"
+    ]
+  }
+}
